@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie-edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    
+   
+    <title>LIBRARY</title>
+  </head>
+  <body>
+    <div class="container mt-4" >
+      <h1 class="display-4" style="text-align: center;"><i class="fas fa-book-open text-info"></i>MY<span class="text-info" >RECORD</span>LIST</h1>
+   <form id="book-Form">
+    <div class="form-group">
+      <label for="date">DATE</label>
+      <input type="datetime" id="date"  class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="student">STUDENT NAME</label>
+      <input type="text" id="student"  class="form-control">
+    </div>
+     <div class="form-group">
+       <label for="tilte">TITLE</label>
+       <input type="text" id="title"  class="form-control">
+     </div>
+     <div class="form-group">
+      <label for="author">AUTHOR</label>
+      <input type="text"  id="author"   class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="isbn">REGD</label>
+      <input type="text" id="isbn"  class="form-control">
+    </div>
+    <input type="submit" value="ADD BOOK" class="btn btn-info btn-block">
+   </form>
+   
+   <table class="table table-dark table-bordered table-hover mt-5">
+    <thead>
+      <th>DATE</th>
+      <th>STUDENT</th>
+     <th>TITLE</th>
+     <th>AUTHOR</th>
+     <th>REGD</th>
+     <th>DELETE</th>
+    
+    </thead>
+    <tbody id="book-list"></tbody>
+
+  </table>
+    </div>
+    
+
+  </body>
+  <script src="app.js"></script>
+</html>
