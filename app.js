@@ -39,6 +39,7 @@ static addBookToList(book)
        list.appendChild(row);
   
     }
+    
 
     static deleteBook(target){
 
@@ -55,7 +56,7 @@ static addBookToList(book)
     static showAlert(message,className)
     {
         const div=document.createElement('div');
-        div.className=`alert alert-${className}`;
+        div.className=`alert alert-${className}`; 
         div.appendChild(document.createTextNode(message));
         const container= document.querySelector('.container');
         const form=document.querySelector('#book-Form');
